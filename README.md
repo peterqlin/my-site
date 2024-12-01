@@ -1,1 +1,1 @@
-<a href="https://peterlin.us/" target="_blank" rel="noopener noreferrer">peterlin.us</a>
+[peterlin.us](https://peterlin.us/)
