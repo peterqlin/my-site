@@ -92,6 +92,7 @@ section {
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .project-card h3 {
@@ -99,10 +100,15 @@ section {
     color: var(--primary-color);
 }
 
+.project-card:hover {
+    transform: scale(1.02);
+}
+
 .tags {
     display: flex;
     gap: 0.5rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .tags span {
@@ -142,6 +148,63 @@ section {
 
 .card-2:hover .img-2 {
     content: url('images/energytracker_live.gif');
+}
+
+/* Course Reviews */
+#course-reviews {
+    background-color: #f4f4f4;
+}
+
+.course-reviews-scroll {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scrollbar-width: auto;
+    scrollbar-color: var(--secondary-color) #e0e0e0;
+}
+
+.course-reviews-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.course-reviews-scroll::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
+
+.course-reviews-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.course-reviews-grid {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+    min-width: 100%;
+    padding: 1rem 0;
+}
+
+.course-review-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    min-width: 300px;
+    max-width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.course-review-card:hover {
+    transform: scale(1.02);
+}
+
+.course-review-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.course-review-card h4 {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
 }
 
 /* Skills */
